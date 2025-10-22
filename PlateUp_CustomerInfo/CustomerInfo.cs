@@ -130,6 +130,7 @@ namespace KitchenCustomerInfo
                         else
                         {
                             smoothedDecreaseRate = alpha * decreaseRate + (1f - alpha) * smoothedDecreaseRate;
+                            //Debug.Log($"[KitchenCustomerInfo] Decrease rate: {smoothedDecreaseRate}");
                         }
                     }
 
@@ -176,7 +177,22 @@ namespace KitchenCustomerInfo
                         // Update the text to display time remaining
                         if (timeRemaining > 0f)
                         {
-                            textMeshPro.text = $"{Helpers.FormatTime(timeRemaining)}";
+                            if (smoothedDecreaseRate >= 0.0001f)
+                            {
+                                // If timeRemaining is really large, display infinity.
+                                if (timeRemaining > 1800f)
+                                {
+                                    textMeshPro.text = "∞";
+                                }
+                                else
+                                {
+                                    textMeshPro.text = $"{Helpers.FormatTime(timeRemaining)}";
+                                }
+                            } else
+                            {
+                                textMeshPro.text = "∞";
+                            }
+
                             textMeshPro.enabled = timerEnabled;
 
                             if(queuePosition == 1)
@@ -225,7 +241,23 @@ namespace KitchenCustomerInfo
                         // Highlight is disabled
                         if (timeRemaining > 0f)
                         {
-                            textMeshPro.text = $"{Helpers.FormatTime(timeRemaining)}";
+                            if (smoothedDecreaseRate >= 0.0001f)
+                            {
+                                // If timeRemaining is really large, display infinity.
+                                if (timeRemaining > 1800f)
+                                {
+                                    textMeshPro.text = "∞";  // or "\u221E"
+                                }
+                                else
+                                {
+                                    textMeshPro.text = $"{Helpers.FormatTime(timeRemaining)}";
+                                }
+                            }
+                            else
+                            {
+                                textMeshPro.text = "∞";
+                            }
+
                             textMeshPro.enabled = timerEnabled;
                             BarData.Color = standardColor; // Limeish green
 

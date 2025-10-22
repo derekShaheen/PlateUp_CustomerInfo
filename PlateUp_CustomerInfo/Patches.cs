@@ -64,7 +64,7 @@ namespace KitchenCustomerInfo
         {
             if (__instance == null)
             {
-                Debug.LogError("[KitchenCustomerInfo] CustomerIndicatorView instance is null in Postfix.");
+                //Debug.LogError("[KitchenCustomerInfo] CustomerIndicatorView instance is null in Postfix.");
                 return;
             }
 
@@ -84,7 +84,7 @@ namespace KitchenCustomerInfo
                 if (patienceRect != null)
                 {
                     patienceRect.Color = selectedColor;
-                    Debug.Log($"[KitchenCustomerInfo] Set Patience rect color to '{colorKey}'.");
+                    //Debug.Log($"[KitchenCustomerInfo] Set Patience rect color to '{colorKey}'.");
                 }
             }
         }
