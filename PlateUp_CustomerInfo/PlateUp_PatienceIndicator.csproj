@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KitchenCustomerInfo</RootNamespace>
-    <AssemblyName>PlateUp_CustomerInfo</AssemblyName>
+    <AssemblyName>PlateUp_PatienceIndicator</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

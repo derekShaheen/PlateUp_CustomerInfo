@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlateUp_CustomerInfo", "PlateUp_CustomerInfo\PlateUp_CustomerInfo.csproj", "{296D2D3A-EB76-47BE-A1FB-75AB13CC62E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlateUp_PatienceIndicator", "PlateUp_CustomerInfo\PlateUp_PatienceIndicator.csproj", "{296D2D3A-EB76-47BE-A1FB-75AB13CC62E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
